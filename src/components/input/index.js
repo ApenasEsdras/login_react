@@ -1,10 +1,15 @@
 import React from "react";
-import { InputCustomizado } from "./style";
+import * as C from "./styles";
 
-const Input = () => {
-    return (
-        <InputCustomizado/>
-    );
-}
+const Input = ({ type, placeholder, value, onChange }) => {
+  return (
+    <C.Input
+      value={value}
+      onChange={onChange}
+      type={type}
+      placeholder={placeholder}
+    />
+  );
+};
 
 export default Input;
